@@ -1139,8 +1139,8 @@ export default {
           addEvent(this.$refs.dot, EVENT_MOUSE_DOWN, this._start)
         }
       }
-      addEvent(document, EVENT_KEY_DOWN, this.handleKeydown)
-      addEvent(document, EVENT_KEY_UP, this.handleKeyup)
+      // addEvent(document, EVENT_KEY_DOWN, this.handleKeydown)
+      // addEvent(document, EVENT_KEY_UP, this.handleKeyup)
       addEvent(window, EVENT_RESIZE, this.refresh)
       if (this.isRange && this.tooltipMerge) {
         addEvent(this.$refs.dot0, transitionEnd, this.handleOverlapTooltip)
